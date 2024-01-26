@@ -1,0 +1,51 @@
+/* App.css */
+body {
+  background-color: #f0f0f0; /* Arka plan rengi */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.game-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* Oyun alanının arka plan rengi */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.scoreboard {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(25% - 10px); /* Kartların yanyana sığması için genişlik ayarı */
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card p {
+  text-align: center;
+  padding: 10px;
+}
